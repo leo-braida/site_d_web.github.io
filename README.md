@@ -1,1 +1,6 @@
--e "mudanças: \nAs perguntas tem que comecar com o nome p0 (por conta de um laço feito, mas se quiser da para começar com p1, aí tem q mudar mais coisa). \nOrganização; mudei umas paradas, principalmente fechando label q estava fechando só depois do lugar que deveria. \nAdicionei o script e a função verifica() já esta rodando"  
+verifica() já funciona
+
+Ainda pretendo organizar melhor, queria deixar só a index fora de página e talvez o css e script padrão.
+Pasta SubPaginas para as outras páginas (ai organiza melhor pa)
+Pasta Imagens para as imagens em geral (pode organizar com mais pastas dentro dela para organizar melhor)
+
