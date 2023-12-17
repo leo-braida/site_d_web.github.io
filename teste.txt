@@ -1,0 +1,3 @@
+teste/nteste
+teste . teste 
+ teste echo. teste
