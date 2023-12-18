@@ -14,15 +14,7 @@ function verifica(){
             }
         }
     }
-    //Agora falta ter o lugar de enviar o quiz no html para eu poder linkar com o valor de certo
 }
-
-
-/* 
-temos duas opções:
- -> Colocar uma classe em todas as corretas
- -> Colocar um laço sempre que quiser pegar as corretas (pode gerar um delay para aparecer as cores)
-*/
 
 function correcao(){
     let quant = document.querySelector('span[data-quant-perguntas]').dataset.quantPerguntas;
