@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>principal</title>
     <link rel="stylesheet" href="index.css"> <!-- link pra pagina?? -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tipoQuiz {
+            margin-top: 100px;
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            text-align: center;
+            overflow: hidden; /* Evita que o texto ultrapasse os limites da div */
+        }
+
+        .textoImagem {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            font-weight: 1000;
+            color: black;
+        }
+
+        .tipoQuiz a {
+            display: block; /* Faz com que o link ocupe toda a largura disponível */
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>QUIZ BEM DAORA MERMO</h1>
 
-    <div class="tipoQuiz"> <!-- colocar o texto no meio dessa porra -->
-        <span class="textoImagem">quiz de p e r</span>
-        <a href="pergunta.html"><img src="perguntaserespostas.jpg" alt="perguntas e respostas"></a>
+    <div class="tipoQuiz">
+        <a href="pergunta.html">
+            <span class="textoImagem">quiz de perguntas e respostas</span>
+            <img src="perguntaserespostas.jpg" alt="perguntas e respostas">
+        </a>
     </div>
 
     <div class="tipoQuiz">
-        <span class="textoImagem">quiz de emoji</span>
-        <a href="pergunta.html"><img src="emojis.png" alt="emojis"></a>
+        <a href="pergunta.html">
+            <span class="textoImagem">quiz de emoji</span>
+            <img src="emojis.png" alt="emojis">
+        </a>
     </div>
-    
 </body>
 </html>
