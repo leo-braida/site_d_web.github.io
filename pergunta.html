@@ -6,59 +6,7 @@
     <script src="perguntasERespostas.js"></script>
     <title>pergunta</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: antiquewhite;
-        }
-
-        .formaPerguntas {
-            background-color: white;
-            text-align: center;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        input {
-            visibility: hidden;
-        }
-
-        h3 {
-            margin-bottom: 10px;
-        }
-
-        .perguntaContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .labelContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box; /* Inclui a borda no cálculo do tamanho */
-}
-
-.labelContainer label {
-    flex-basis: calc(48% - 20px); /* 48% com uma borda de 10px em cada lado (totalizando 20px) */
-    margin-bottom: 20px;
-    border: 1px solid #ccc; /* Adicione uma borda para todos os labels */
-    padding: 10px; /* Adicione algum preenchimento se necessário */
-}
-
-    #envio{
-        visibility: visible;
-        justify-content: center;
-        align-content: center;
-    }
-    </style>
+    <link rel="stylesheet" href="stylePergunta.css">
 </head>
 <body>
     <span onclick="verifica()" class="perguntas" data-quant-perguntas="3">
@@ -95,7 +43,8 @@
             </div>
         </div>
 
-        <input id="envio" type="submit">
+        <input id="envio" type="submit" onclick="correcao()">
+        <br><br><br><span class="formaPerguntas" id="pontuacao">Pontuação: </span> <!-- EU (Léo) ainda tenho que fazer o css dessa caixa e configurar o js para mostrar aqui-->
     </span>
 </body>
 </html>
