@@ -1,3 +1,6 @@
+IDEIAS:
+depois de enviar, cancelar os inputs para não conseguir mudar o selecionado
+
 verifica() já funciona
 
 Ainda pretendo organizar melhor, queria deixar só a index fora de página e talvez o css e script padrão.
