@@ -1,5 +1,5 @@
 LEMBRETE: APAGAR BOTÃO EM COMENTÁRIO NO CSS
-
+LEMBRETE 2: lembrar de estudar a linha de código do dataset (tem no js das perguntas e respostas)
 IDEIAS:
 depois de enviar, cancelar os inputs para não conseguir mudar o selecionado
 
