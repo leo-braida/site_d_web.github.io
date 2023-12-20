@@ -1,3 +1,5 @@
+LEMBRETE: APAGAR BOTÃO EM COMENTÁRIO NO CSS
+
 IDEIAS:
 depois de enviar, cancelar os inputs para não conseguir mudar o selecionado
 
