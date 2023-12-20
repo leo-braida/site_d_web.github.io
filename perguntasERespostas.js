@@ -1,8 +1,9 @@
 var certo;
+var quant;
 
 function verifica(){
     certo = 0;
-    let quant = document.querySelector('span[data-quant-perguntas]').dataset.quantPerguntas;
+    quant = document.querySelector('span[data-quant-perguntas]').dataset.quantPerguntas;
     for(let i = 0; i<quant; i++){
         let nome = "p" + i;
         let radios = document.querySelectorAll(`input[name="${nome}"]`);
@@ -17,7 +18,6 @@ function verifica(){
 }
 
 function correcao(){
-    let quant = document.querySelector('span[data-quant-perguntas]').dataset.quantPerguntas;
     for(let i = 0; i<quant; i++){
         let nome = "p" + i;
         let radios = document.querySelectorAll(`input[name="${nome}"]`);
