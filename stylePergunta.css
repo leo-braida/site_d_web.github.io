@@ -4,6 +4,22 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+#primeiraPergunta{
+  margin-top: 5vh;
+}
+
+.perguntaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20vh;
+}
+
+#titulo{
+  margin-top: 10vh;
+}
+
+
 .formaPerguntas {
   background-color: rgb(255, 255, 255);
   border: solid thin;
@@ -26,11 +42,6 @@ body {
   padding: 20px;
 }
 
-
-
-#primeiraPergunta{
-  margin-top: 25vh;
-}
 .formaPerguntas label{
   border: solid thin;
   border-radius: 20px;
@@ -47,33 +58,15 @@ body {
   background-color: rgb(53, 107, 255);
 }
 
-.formaPerguntas input:checked{
-  background-color: blue;
-}
-
-
 
 input {
-    visibility: hidden;
-}
-
-.perguntaContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20vh;
+  visibility: hidden;
 }
 
 #pontuacao{
   width: fit-content;
   height: fit-content;
 }
-
-/*#envio{
-visibility: visible;
-justify-content: center;
-align-content: center;
-}*/
 
 
 #envio {
@@ -103,7 +96,6 @@ align-content: center;
   white-space: nowrap;
   word-wrap: break-word;
 }
-
 
 #envio:hover {
   background-color: #F3F4F6;
