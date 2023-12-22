@@ -41,9 +41,8 @@ var dados = [
     
     if(resposta != jogo){
       if(p<4){
+        document.getElementById("emojis").innerHTML += emojis[p];
         p++;
-        let emoji = emojis[p-1];
-        document.getElementById("emojis").innerHTML += emoji;
       }
     }
     else{
