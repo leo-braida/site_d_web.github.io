@@ -11,38 +11,35 @@
     <span onclick="verifica()" class="perguntas" data-quant-perguntas="3">
 
         <div class="perguntaContainer">
-            <div class="formaPerguntas">
-                <h3><span>1.</span> Pergunta pergunta</h3>
-                <div class="labelContainer">
+            <div id="primeiraPergunta" class="formaPerguntas">
+                    <h3>1. Pergunta pergunta</h3>
                     <label for="blabla"><input type="radio" name="p0" id="blabla" value="certa"> blabla</label>
                     <label for="bleble"><input name="p0" type="radio" value="errada" id="bleble"> bleble</label>
                     <label for="bloblo"><input name="p0" type="radio" id="bloblo"> bloblo</label>
                     <label for="blublu"><input name="p0" type="radio" id="blublu"> blublu</label>
-                </div>
             </div>
 
             <div class="formaPerguntas">
-                <h3><span>2.</span> Pergunta pergunta</h3>
-                <div class="labelContainer">
+                <h3>2. Pergunta pergunta</h3>
                     <label for="dada"><input name="p1" type="radio" id="dada" value="certa"> dada</label>
                     <label for="dede"><input name="p1" type="radio" id="dede"> dede</label>
                     <label for="dodo"><input name="p1" type="radio" id="dodo"> dodo</label>
                     <label for="dudu"><input name="p1" type="radio" id="dudu"> dudu</label>
-                </div>
+                
             </div>
 
             <div class="formaPerguntas">
-                <h3><span>3.</span> Pergunta pergunta</h3>
-                <div class="labelContainer">
+                <h3>3.Pergunta pergunta</h3>
                     <label for="baba"><input name="p2" type="radio" id="baba" value="certa"> baba</label>
                     <label for="bebe"><input name="p2" type="radio" id="bebe"> bebe</label>
                     <label for="bobo"><input name="p2" type="radio" id="bobo"> bobo</label>
                     <label for="bubu"><input name="p2" type="radio" id="bubu"> bubu</label>
-                </div>
+             
             </div>
+            <input id="envio" type="submit" onclick="correcao()">
         </div>
 
-        <input id="envio" type="submit" onclick="correcao()">
+        
         <br><br><br><span class="formaPerguntas" id="pontuacao">Pontuação: </span> <!-- EU (Léo) ainda tenho que fazer o css dessa caixa e configurar o js para mostrar aqui-->
     </span>
 </body>

@@ -1,47 +1,72 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: rgb(250, 235, 215);
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
 }
 
 .formaPerguntas {
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: solid thin;
+  border-radius: 10px;
+  width: 45vh;
+  height: 30vh;
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 20px 20px 50px grey;
 }
+
+.formaPerguntas h3{
+  border: solid medium;
+  border-radius: 10px;
+  grid-column-end: span 2;
+  background-color: rgb(255, 47, 255);
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+
+
+#primeiraPergunta{
+  margin-top: 25vh;
+}
+.formaPerguntas label{
+  border: solid thin;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(134, 166, 255);
+}
+
+.formaPerguntas label:hover{
+  background-color: rgb(92, 136, 255);
+}
+
+.formaPerguntas label:active{
+  background-color: rgb(53, 107, 255);
+}
+
+.formaPerguntas input:checked{
+  background-color: blue;
+}
+
+
 
 input {
     visibility: hidden;
-}
-
-h3 {
-    margin-bottom: 10px;
 }
 
 .perguntaContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20vh;
 }
 
-.labelContainer {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-box-sizing: border-box; /* Inclui a borda no cálculo do tamanho */
-}
-
-.labelContainer label {
-flex-basis: calc(48% - 20px); /* 48% com uma borda de 10px em cada lado (totalizando 20px) */
-margin-bottom: 20px;
-border: 1px solid #ccc; /* Adicione uma borda para todos os labels */
-padding: 10px; /* Adicione algum preenchimento se necessário */
+#pontuacao{
+  width: fit-content;
+  height: fit-content;
 }
 
 /*#envio{
@@ -52,6 +77,7 @@ align-content: center;
 
 
 #envio {
+  margin-top: -15vh;
   visibility: visible;
   appearance: none;
   background-color: #FAFBFC;
@@ -77,6 +103,7 @@ align-content: center;
   white-space: nowrap;
   word-wrap: break-word;
 }
+
 
 #envio:hover {
   background-color: #F3F4F6;
