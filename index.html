@@ -3,57 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>principal</title>
-    <link rel="stylesheet" href="index.css"> <!-- link pra pagina?? -->
+    <title>Principal</title>
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .tipoQuiz {
-            margin-top: 100px;
+       .container {
             position: relative;
-            height: fit-content;
-            width: fit-content;
-            text-align: center;
-            overflow: hidden; /* Evita que o texto ultrapasse os limites da div */
+            display: block;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
         }
 
-        .textoImagem {
+        .overlay {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: large;
-            font-weight: 1000;
-            color: black;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
         }
 
-        .tipoQuiz a {
-            display: block; /* Faz com que o link ocupe toda a largura disponível */
+        .overlay p {
+            color: #000;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        #containerQuizes{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto auto auto;
+            grid-gap: 12vh;
+        }
+
+        #emojis{
+            grid-column-start: 2;
+        }
+
+       
+
+        #titulo{
+            display: flex;
+            border: thin solid;
+            box-shadow: 10px 10px 25px 10px grey;
+            border-radius: 5px;
+            width: 50vh;
+            height: 10vh;
+            justify-content: center;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-top: 10vh;
+            margin-bottom: 15vh;
+            margin-left: 30%;
+        }
+
+        #tipoPergresp{
+            text-decoration: underline;
+            position: absolute;
+            margin-left: 77vh;
+            margin-top: -5vh;
+        }
+
+        #tipoEmoji{
+            text-decoration: underline;
+            position: absolute;
+            margin-left: 77vh;
+            margin-top: 28vh;
         }
 
 
     </style>
 </head>
 <body>
-    <h1>QUIZ BEM DAORA MERMO</h1>
 
-    <div class="tipoQuiz">
-        <a href="pergunta.html">
-            <span class="textoImagem">quiz de perguntas e respostas</span>
-            <img src="perguntaserespostas.jpg" alt="perguntas e respostas">
-        </a>
+    <div id="titulo">
+        <h1>QUIZES BEM BACANAS</h1>
     </div>
 
-    <div class="tipoQuiz">
-        <a href="emoji.html">
-            <span class="textoImagem">quiz de emoji</span>
+    <div id="containerQuizes"> 
+
+        <a id="conhecimentosGerais" href="conhecimentosGerais.html" class="container">
+            <div class="overlay">
+              <p>Conhecimentos Gerais</p>
+            </div>
+            <img src="conhecimentosGerais.png" alt="emojis">
+        </a>
+
+        <h2 id="tipoPergresp">Perguntas e Respostas</h2>
+        <a id="culturaPop" href="CulturaPop.html" class="container">
+            <div class="overlay">
+              <p>Cultura POP</p>
+            </div>
+            <img src="culturaPop.jfif" alt="emojis">
+        </a>
+
+        <a id="esportes" href="Esportes.html" class="container">
+            <div class="overlay">
+              <p>Esportes</p>
+            </div>
+            <img src="Esportes.jfif" alt="emojis">
+        </a>
+        <h2 id="tipoEmoji">Emojis</h2>
+        <a id="emojis" href="emoji.html" class="container">
+            <div class="overlay">
+              <p>Quiz de Emoji</p>
+            </div>
             <img src="emojis.png" alt="emojis">
         </a>
+          
     </div>
 </body>
 </html>
