@@ -12,16 +12,6 @@ function verifica(){
                 if(radio.value === "certa"){
                     certo++;
                 }
-                    let labels = radio.labels;
-                    for (var j = 0; j < labels.length; j++) {
-                    labels[j].style.backgroundColor = 'blue';
-                    }
-            }
-            if(!radio.checked){
-                let labels = radio.labels;
-                    for (var j = 0; j < labels.length; j++) {
-                    labels[j].style.backgroundColor = 'rgb(134, 166, 255)';
-                    }
             }
         }
     }
@@ -43,4 +33,24 @@ function correcao(){
 
     const labels = document.querySelectorAll("label");
     document.getElementById("pontuacao").innerHTML = `Pontuação: ${certo}/${quant}`;
+}
+
+function mudaCor(){
+    for(let i = 0; i<quant; i++){
+        let nome = "p" + i;
+        let radios = document.querySelectorAll(`input[name="${nome}"]`);
+        for(let radio of radios){
+            if(radio.checked){
+                    let labels = radio.labels;
+                    for (var j = 0; j < labels.length; j++) {
+                    labels[j].style.backgroundColor = 'blue';
+                    }
+            }else{
+                let labels = radio.labels;
+                   for (var j = 0; j < labels.length; j++) {
+                    labels[j].style.backgroundColor = 'rgb(134, 166, 255)';
+                    }
+            }
+        }
+    }
 }
