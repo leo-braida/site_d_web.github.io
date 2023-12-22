@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="emoji.js"></script>
     <title>Emojis</title>
     <style>
         body{
@@ -15,7 +16,7 @@
             align-items: center;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 30%;
+            width: 40%;
             height: 25vh;
             border: solid black;
            border-radius: 10px;
@@ -25,13 +26,18 @@
             border-style: groove;
         }
 
+        #emojis{
+            font-size: 5vh;
+        }
     </style>
 </head>
-<body>
+<body onload="selecionaJogo()">
     <div id="caixa">
-        <h1>Descubra pelos Emojis:</h1>
-        <span>emojis</span>
-        <input type="search">
+        <h1 id = "resultado">Descubra pelos Emojis:</h1>
+        <span id="emojis"></span>
+        <input name="resposta" type="text" onkeyup="verificaEnter(event)">
+        <button onclick="verifica()">Enviar.</button>
     </div>
+    <a href="index.html">Voltar para a página principal.</a>
 </body>
 </html>
