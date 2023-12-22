@@ -37,7 +37,7 @@ var dados = [
 
   var p = 0;
   function verifica(){
-    let resposta = document.querySelector(`input[name="resposta"]`).value.toUpperCase();
+    let resposta = document.querySelector(`input[id="resposta"]`).value.toUpperCase();
     
     if(resposta != jogo){
       if(p<4){
@@ -56,6 +56,7 @@ var dados = [
   function verificaEnter(event){
     if(event.key === "Enter"){
       verifica();
+      document.getElementById("resposta").value = "";
     }
   }
   
